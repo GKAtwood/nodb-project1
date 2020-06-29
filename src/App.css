@@ -44,18 +44,18 @@
   
 }
 
-/* .App input{
+.App input{
   border: 3px solid black;
-} */
+}
 
 .App Ghosts{
   display: flex;
   justify-content: space-between;
 }
 
-/* .App img{
+.App img{
   border: 5px solid #555;
-} */
+}
 
 
 
