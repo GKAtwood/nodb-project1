@@ -91,6 +91,7 @@ class App extends Component {
             
             </ul>
             <label>Name: <input onChange={this.handleChange} id="ghost-name" value={this.state.ghostSelected.name} type="text" /></label>
+            
             <img src={this.state.ghostSelected.image}/>
             <div className='EditButton'>
               <button onClick={this.editGhost}>CHANGE NAME</button>
@@ -102,11 +103,13 @@ class App extends Component {
             <Footer />
             </footer>
             
+            
              </>
          
-         
-        }
+          } 
+        
       </div>)
+          
   }
 }
 
