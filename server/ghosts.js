@@ -13,8 +13,8 @@ let ghosts = [
     },
     {
       id: 3,
-      name: "Bloody Mary",
-      image: "https://i.ytimg.com/vi/vlZ0GzrKLDQ/hqdefault.jpg",
+      name: "Beetlejuice",
+      image: "https://pmcvariety.files.wordpress.com/2014/02/beetlejuice.jpg?w=681&h=383&crop=1",
     },
     {
       id: 4,

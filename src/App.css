@@ -20,8 +20,10 @@
 }
 
 .App ul{
+  
+  padding-bottom: 60px;
   font-size: 25px;
-  font-family:'Creepster', cursive;
+  font-family:'Eater';
 }
 
 
@@ -34,6 +36,8 @@
   font-size: 30px;
   flex: 50px;
   justify-content: center;
+  padding-bottom: 80px;
+  
 }
 
 .App Ghosts{
@@ -43,7 +47,59 @@
 
 .App img{
   display: flexbox;
+  
+  
 }
+
+.EditButton button{
+  background-color: red; 
+  transition-duration: 0.4s;
+  font-size: 20px;
+  font-family: 'Creepster', cursive;
+  
+}
+
+.EditButton button:hover {
+  background-color:black;
+  color: white;
+}
+
+
+.Banish{
+  background: url("https://i.pinimg.com/originals/be/b3/97/beb397317026961432c49af1ce6c2910.jpg");
+}
+
+.EditButton{
+  background: url("https://i.pinimg.com/originals/be/b3/97/beb397317026961432c49af1ce6c2910.jpg");
+  padding: 4px;
+
+}
+.Banish button{
+  background-color: red;
+  transition-duration: 0.4s;
+  font-size: 20px;
+  font-family: 'Creepster', cursive;
+
+}
+
+.Banish button:hover {
+  background-color:black;
+  color: white;
+}
+
+
+.footer Footer{
+  background: url("https://i.pinimg.com/originals/be/b3/97/beb397317026961432c49af1ce6c2910.jpg");
+ padding: 2px;
+ color: brown;
+ font-family: "Nosifer";
+ display: flex;
+ justify-content: space-evenly
+}
+
+
+
+
 
 @keyframes pulse_animation {
   0% { transform: scale(1); }

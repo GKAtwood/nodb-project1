@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Header from './Components/Header'
-import Main from './Components/Main'
+import Main from './Components/Main' 
+import Footer from './Components/Footer'
 import axios from 'axios'
 import './App.css';
 
@@ -46,8 +47,12 @@ class App extends Component {
 
   deleteGhost= id=>{
     console.log('delete ghost', id)
-    // axios.delete(`/api/select-ghost/${id}`)
-    // .then(res=> this.setState({ghostSelected: res.data}))
+    axios.delete(`/api/select-ghost/${id}`)
+    .then(res=> {
+      this.setState({ghostSelected: res.data})
+      this.getAllGhosts()
+    })
+ 
   }
 
   getRandomGhost(){
@@ -83,14 +88,20 @@ class App extends Component {
             {this.state.ghosts.map((ghost, index) => {
               return <li key={index} onClick={() => this.selectGhost(ghost)}>{ghost.name}</li>
             })}
+            
             </ul>
             <label>Name: <input onChange={this.handleChange} id="ghost-name" value={this.state.ghostSelected.name} type="text" /></label>
             <img src={this.state.ghostSelected.image}/>
-            <div>
-              <button onClick={this.editGhost}>EDIT</button>
-              <button onClick={this.deleteGhost}>DELETE</button>
+            <div className='EditButton'>
+              <button onClick={this.editGhost}>CHANGE NAME</button>
+              </div>
+              <div className ='Banish'>
+              <button onClick={this.deleteGhost}>BANISH</button>
             </div>
-            <div></div>
+            <footer className='footer'>
+            <Footer />
+            </footer>
+            
              </>
          
          
