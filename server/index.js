@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 const ghostCtrl =require('./controllers/ghostCtrl')
-const SERVER_PORT = 6660
+const SERVER_PORT = 6690
 
 app.use(express.json())
 

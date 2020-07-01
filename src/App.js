@@ -34,6 +34,7 @@ class App extends Component {
           ghostSelected: res.data
         })
       })
+      .catch(err => console.log(err))
   }
   
   editGhost(){
@@ -42,6 +43,7 @@ class App extends Component {
       this.setState({ghostSelected: res.data})
       this.getAllGhosts()
     })
+    .catch(err => console.log(err))
   console.log('editGhost', this.state.ghostSelected)
   }
 
@@ -52,6 +54,7 @@ class App extends Component {
       this.setState({ghostSelected: res.data})
       this.getAllGhosts()
     })
+    .catch(err => console.log(err))
  
   }
 
